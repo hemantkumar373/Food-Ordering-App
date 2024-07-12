@@ -3,7 +3,7 @@ import useData from '../hooks/useData'
 import { Button } from '@mui/material'
 
 const Filter = ({ onFilter }) => {
-    const url = 'api/data'
+    const url = 'http://localhost:3000/api/data'
     const labels = useData(url).labels;
     console.log(labels);
     return (
