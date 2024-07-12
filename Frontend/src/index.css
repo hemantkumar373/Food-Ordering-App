@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.918), rgba(240, 240, 240, 0.932));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.labels {
+  margin: 10px;
+  height: fit-content;
+  border-radius: 2%/5%;
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.labels .labelItem {
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px;
+  border: gray solid 1px;
+  border-radius: 40%;
+  text-align: center;
+  width: fit-content;
+  height: 30px;
+
+}
+
+.labels .labelItem:hover {
+  border: skyblue solid 2px;
+}
