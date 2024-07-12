@@ -40,11 +40,11 @@ const SelectMeal = () => {
     }
     return (
         <div className="flex flex-col gap-4 overflow-y-auto ml-[22px] mt-5">
-            {
-                totalmealPrice ? <div className="bg-gray-100 p-4 w-[450px] text-center rounded-md shadow-md">
-                    Total Price: <span className="font-bold">{totalmealPrice === 0 ? " " : `$${totalmealPrice.toFixed(2)}`}</span>
-                </div> : " "
-            }
+            
+            <div className="bg-gray-100 p-4 w-[450px] text-black text-center rounded-md shadow-md">
+                Total Price: <span className="font-bold">{totalmealPrice === 0 ? "$0.00" : `$${totalmealPrice.toFixed(2)}`}</span>
+            </div>
+                
             {passenger1Data.length > 0 && (
                 <div className="border border-gray-200 rounded-lg p-4 max-w-md">
                     <h2 className="text-lg font-bold mb-2">Passenger 1</h2>
