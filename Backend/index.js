@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 const PORT = process.env.PORT || 3000;
 
-app.use("/api", approutes);
+app.use("/api/auth", approutes);
 app.use("/api", dataroutes);
 
 app.get("/", (req, res) => {
