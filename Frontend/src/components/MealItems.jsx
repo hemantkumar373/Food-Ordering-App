@@ -4,7 +4,7 @@ import Filter from './Filter'
 import Meal from './Meal'
 
 const MealItems = ({ data, setData }) => {
-  const url = 'api/data'
+  const url = 'http://localhost:3000/api/data'
   const meals = useData(url).meals
   const handleData = (labelName) => {
     setData(labelName)
