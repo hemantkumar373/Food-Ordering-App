@@ -47,9 +47,9 @@ const SelectMeal = () => {
                 
             {passenger1Data.length > 0 && (
                 <div className="border border-gray-200 rounded-lg p-4 max-w-md">
-                    <h2 className="text-lg font-bold mb-2">Passenger 1</h2>
+                    <h2 className="text-lg font-semibold text-black mb-2">Passenger 1</h2>
                     {passenger1Data.map((meal) => (
-                        <div key={meal.id} className="bg-gray-100 rounded-lg p-2 mb-2">
+                        <div key={meal.id} className="bg-gray-100 text-black rounded-lg p-2 mb-2">
                             <p>{meal.title} + {meal.selectedDrink}</p>
                             <p className="text-gray-600">Price: ${meal.totalPrice}</p>
                             <button
@@ -65,9 +65,9 @@ const SelectMeal = () => {
 
             {passenger2Data.length > 0 && (
                 <div className="border border-gray-200 rounded-lg p-4 max-w-md">
-                    <h2 className="text-lg font-bold mb-2">Passenger 2</h2>
+                    <h2 className="text-lg font-semibold text-black mb-2">Passenger 2</h2>
                     {passenger2Data.map((meal) => (
-                        <div key={meal.id} className="bg-gray-100 rounded-lg p-2 mb-2">
+                        <div key={meal.id} className="bg-gray-100 text-black rounded-lg p-2 mb-2">
                             <p>{meal.title} + {meal.selectedDrink}</p>
                             <p className="text-gray-600">Price: ${meal.totalPrice}</p>
                             <button
